@@ -35,7 +35,7 @@ if "budget_history" not in st.session_state:
 
 async def get_response(question, history, api_key):
     provider = GoogleProvider(api_key=api_key)
-    model = GoogleModel("gemini-2.5-flash", provider=provider)
+    model = GoogleModel("gemini-3.5-flash", provider=provider)
 
     agent = Agent(
         model,
